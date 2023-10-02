@@ -3,6 +3,16 @@ package br.edu.uni7.pod.sorting.util;
 import java.util.Arrays;
 
 public class DataGen {
+	public Integer[] getRadixData(int size) {
+		Integer[] result = new Integer[size];
+		
+		for (int i = 0; i < result.length; i++) {
+			result[i] = (int) (Math.random() * 900) + 100;
+		}
+		
+		return result;
+	}
+	
 	public Integer[] getData(int size) {
 		Integer[] result = new Integer[size];
 		
